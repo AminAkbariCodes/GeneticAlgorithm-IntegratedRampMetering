@@ -19,7 +19,7 @@ Subject to Constraints:
 3. $X_j \geq D_j(1-y_j)$
 4. $X_j \geq X_{\text{min}}y_j$
 5. $X_j \leq D_j(1-y_j) + X_{\text{max}}y_j$
-6. $y_j \leq M_kj$
+6. $y_j \leq Mk_j$
 7. $X_j - D_j \leq M(1-k_j)$
 
 Where:
