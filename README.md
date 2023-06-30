@@ -8,7 +8,9 @@ The core problem addressed is Integrated Ramp Metering. The mathematical formula
 
 Objective Function:
 
+$$
 \text{Maximize } Z = D_0 + \sum_{j=1}^{4} X_j
+$$
 
 
 
