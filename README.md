@@ -63,3 +63,53 @@ Here is the eight-step procedure applied to solve the problem with a Genetic Alg
 7. **Generation Evolution and Repetition**: Some or all of the old population is replaced by the new offspring, and the process is repeated from the selection step. The iteration continues until a predefined fitness criterion is met or after a certain number of generations.
 
 8. **Evaluation**: Finally, the algorithm is evaluated to check if a termination condition (optimal or near-optimal solution discovery, or passage of a certain number of generations) has been met. If not, the algorithm cycles back to the selection step.
+
+## Requirements
+
+- Python 3.x+
+- pandas
+- numpy
+- gurobipy
+- copy
+- time
+
+## Code Structure
+### Genetic Algorithm
+The Genetic Algorithm (GA) implementation consists of the following parts:
+
+- `create_individual(bounds)`: Create a single individual (solution).
+- `create_population(bounds, size)`: Create a population of individuals.
+- `calculate_fitness(individual, Aij, Demand, Capacity, M=1000000000)`: Calculate the fitness of an individual solution.
+- `roulette_wheel_selection(population, fitnesses)`: Select individuals for breeding.
+- `tournament_selection(population, fitnesses, tournament_size)`: An alternative selection method.
+- `single_point_crossover(parent1, parent2)`: Generate two offspring from two parents.
+- `mutation(individual, mutation_rate, mutation_strength=0.1)`: Mutate an individual.
+- `create_new_generation(population, Aij, Demand, Capacity, mutation_rate, M=10000000000)`: Create a new generation of solutions.
+- `genetic_algorithm(Aij, Demand, Capacity, mutation_rate, num_generations, population_size)`: The main GA function, which brings together all the steps.
+
+Running the GA and printing the results.
+
+### Gurobi
+The Gurobi implementation has the following parts:
+
+- Input the data from an Excel file using pandas.
+- Create a model using Gurobi.
+- Define decision variables.
+- Set the objective function.
+- Add constraints.
+- Optimize the model using Gurobi.
+- Print the results.
+
+## File Structure
+The project consists of two Jupyter Notebook files (`Genetic-Algorithm.ipynb` and `Gurobi.ipynb`), and one Excel data file (`data.xlsx`). The data file includes the following sheets: `Aij`, `Demand`, and `Capacity`, which provide input data for both the GA and Gurobi solutions.
+
+## Results
+The results obtained from the Gurobi solution and the GA solution are displayed in the notebooks. The GA solution's fitness is compared with the Gurobi solution's fitness to estimate the accuracy of the GA implementation. The notebooks also include a calculation of the Mean Absolute Percentage Error in the solutions.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
