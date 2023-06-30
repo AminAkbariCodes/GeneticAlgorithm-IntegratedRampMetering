@@ -14,16 +14,13 @@ $$
 
 Subject to Constraints:
 
-1. $D_0 A_{0j} + \sum_{j=1}^{4} A_{ij} X_{ij} \leq B_j, \quad \forall j = 1,2,3,4$
-
-
-   
-3. $X_j \leq D_j$
-4. $X_j \geq D_j(1-y_j)$
-5. $X_j \geq X_{\text{min}}y_j$
-6. $X_j \leq D_j(1-y_j) + X_{\text{max}}y_j$
-7. $y_j \leq Mk_j$
-8. $X_j - D_j \leq M(1-k_j)$
+1. $D_0 A_{0j} + \sum_{i=1} A_{ij} X_{ij} \leq B_j, \quad \forall j = 1,2,3,4$
+2. $X_j \leq D_j$
+3. $X_j \geq D_j(1-y_j)$
+4. $X_j \geq X_{\text{min}}y_j$
+5. $X_j \leq D_j(1-y_j) + X_{\text{max}}y_j$
+6. $y_j \leq M_kj$
+7. $X_j - D_j \leq M(1-k_j)$
 
 Where:
 * **𝑦𝑗** = {0 if No Ramp Metering, 1 if Ramp Metering}
