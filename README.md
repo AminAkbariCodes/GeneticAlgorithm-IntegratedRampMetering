@@ -14,7 +14,7 @@ $$
 
 Subject to Constraints:
 
-1. $D_0 A_{0j} + \sum_{i=1}^{1} A_{ij} X_{ij} \leq B_j, \quad \forall j = 1,2,3,4$
+1. $D_0 A_{0j} + \sum_{i=1}^{1} (A_{ij} X_{ij}) \leq B_j, \quad \forall j = 1,2,3,4$
 2. $X_j \leq D_j$
 3. $X_j \geq D_j(1-y_j)$
 4. $X_j \geq X_{\text{min}}y_j$
