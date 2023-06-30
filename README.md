@@ -7,9 +7,14 @@ This repository contains a genetic algorithm designed to solve the mixed integer
 The core problem addressed is Integrated Ramp Metering. The mathematical formulation of the problem is as follows:
 
 Objective Function:
-**Maximize 𝑍 = 𝐷0 + Σ𝑋𝑗 (for 𝑗=1 to 4)**
+
+\[
+\max Z = D_0 + \sum_{j=1}^{4}X_j
+\]
+
 
 Subject to Constraints:
+
 1. **𝐷0𝐴0𝑗 + Σ𝐴𝑖𝑗𝑋𝑖𝑗 (for 𝑖=1) ≤ 𝐵𝑗 (for 𝑗=1 to 4)**
 2. **𝑋𝑗 ≤ 𝐷𝑗**
 3. **𝑋𝑗 ≥ 𝐷𝑗(1−𝑦𝑗)**
