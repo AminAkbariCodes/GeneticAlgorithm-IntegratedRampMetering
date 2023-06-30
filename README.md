@@ -106,6 +106,22 @@ The project consists of two Jupyter Notebook files (`Genetic-Algorithm.ipynb` an
 ## Results
 The results obtained from the Gurobi solution and the GA solution are displayed in the notebooks. The GA solution's fitness is compared with the Gurobi solution's fitness to estimate the accuracy of the GA implementation. The notebooks also include a calculation of the Mean Absolute Percentage Error in the solutions.
 
+The solutions obtained after running the GA and Gurobi are as follows:
+
+#### Genetic Algorithm Results
+- Parameters: `mutation_rate=0.1`, `num_generations=1000`, `population_size=100`
+- Best solution: `[330.98950416425885, 181.75237603751017, 460.0, 1000.0, 1, 1, 1, 0, 1, 1, 1, 1]`
+- Fitness of the best solution: `6572.741880201769`
+- Runtime(min): `0.8691247383753459`
+
+#### Gurobi Results
+- Solution: `[333.333, 180, 460, 1000, 1, 1, 0, 0, 1, 1, 0, 0]`
+- Fitness value of the Gurobi solution: `6573.3330000000005`
+
+#### Error Metrics
+- Relative Error in Fitness (%): `0.008992695155279295`
+- Mean Absolute Percentage Error in Solution Values (%): `0.419147924020311`
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
