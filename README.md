@@ -15,6 +15,8 @@ $$
 Subject to Constraints:
 
 1. $D_0 A_{0j} + \sum_{j=1}^{4} A_{ij} X_{ij} \leq B_j, \quad \forall j = 1,2,3,4$
+
+
    
 3. $X_j \leq D_j$
 4. $X_j \geq D_j(1-y_j)$
